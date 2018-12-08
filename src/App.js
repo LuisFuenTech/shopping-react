@@ -36,7 +36,7 @@ class App extends Component {
     //Found the index of the object given
     const index = counters.indexOf(counter);
     //Cloning the object given by parameters
-    counter[index] = { ...counter };
+    counters[index] = { ...counter };
     counters[index].value++;
     this.setState({ counters });
   };
@@ -48,7 +48,7 @@ class App extends Component {
       //Found the index of the object given
       const index = counters.indexOf(counter);
       //Cloning the object given by parameters
-      counter[index] = { ...counter };
+      counters[index] = { ...counter };
       counters[index].value--;
       this.setState({ counters });
     }
